@@ -1,0 +1,29 @@
+# Payroll Management System (Frontend)
+
+A frontend-based Payroll Management System built using HTML, CSS, and JavaScript.  
+This project demonstrates employee management, salary calculation, and payslip generation in a modular structure.
+
+## 🔹 Features
+- Employee add & list
+- Payroll calculation
+- Payslip generation
+- Dashboard view
+- Frontend login (demo)
+
+## 🔹 Tech Stack
+- HTML
+- CSS
+- JavaScript
+
+## 🔹 Project Type
+Frontend / Static Web Application
+
+## 🔹 Live Demo
+https://USERNAME.github.io/payroll-management-system/
+
+## 🔹 How to Run Locally
+1. Clone the repository
+2. Open `index.html` in a browser
+
+## 🔹 Note
+This is a frontend-only project built for learning and portfolio purposes.

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div class="container">
+    <h2 id="title">Login</h2>
+
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password" required minlength="4">
+
+    <button onclick="login()">Login</button>
+
+    <p id="message"></p>
+    <p class="toggle" onclick="toggleForm()">New user? Signup</p>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

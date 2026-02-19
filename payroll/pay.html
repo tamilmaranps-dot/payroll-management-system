@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payroll</title>
+  <link rel="stylesheet" href="pay.css">
+  
+</head>
+<body>
+
+<h2>Process Payroll</h2>
+
+<form id="payrollForm">
+
+  <label>Select Employee</label>
+  <select id="employeeSelect" required>
+    <option value="">-- Select Employee --</option>
+  </select>
+
+  <input type="number" id="allowance" placeholder="Allowances" value="0">
+  <input type="number" id="deduction" placeholder="Deductions" value="0">
+
+  <button type="submit">Calculate Salary</button>
+</form>
+
+<h3 id="result"></h3>
+
+<a href="../dashboard/dash.html">⬅ Back to Dashboard</a>
+
+<script src="pay.js"></script>
+</body>
+</html>

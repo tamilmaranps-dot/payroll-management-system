@@ -1,0 +1,20 @@
+.card {
+  max-width: 400px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+}
+@media print {
+
+  .print-hide,
+  button,
+  a {
+    display: none;
+  }
+
+  body {
+    background: white;
+  }
+
+}

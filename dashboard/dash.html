@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payroll Dashboard</title>
+  <link rel="stylesheet" href="dash.css">
+</head>
+
+<body>
+
+<header>
+  <h2>Payroll Dashboard</h2>
+  <button onclick="logout()">Logout</button>
+</header>
+
+<!-- Stats Cards -->
+<section class="cards">
+
+  <div class="card">
+    <h3>Total Employees</h3>
+    <p id="empCount">0</p>
+  </div>
+
+  <div class="card">
+    <h3>Total Payroll</h3>
+    <p id="totalPayroll">₹0</p>
+  </div>
+
+</section>
+
+<section class="actions">
+
+  <a class="action-card" href="../employee/emplist.html">
+    <h3>Manage Employees</h3>
+    <p>Add, edit and view employees</p>
+  </a>
+
+  <a class="action-card" href="../payroll/pay.html">
+    <h3>Process Salary</h3>
+    <p>Run monthly payroll process</p>
+  </a>
+
+  <a class="action-card" href="../payslip/payslip.html">
+    <h3>Payslip</h3>
+    <p>Generate employee payslips</p>
+  </a>
+
+</section>
+
+<script src="dash.js"></script>
+
+</body>
+</html>

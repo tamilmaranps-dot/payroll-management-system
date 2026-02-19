@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payslip</title>
+  <link rel="stylesheet" href="payslip.css">
+
+</head>
+<body>
+
+<h2>Payslip</h2>
+
+<label>Select Payroll Record</label>
+<select id="payslipSelect">
+  <option value="">-- Select --</option>
+</select>
+
+<div id="payslipCard" class="card" style="display:none;">
+  <h3>Employee Payslip</h3>
+  <p><strong>Name:</strong> <span id="psName"></span></p>
+  <p><strong>Date:</strong> <span id="psDate"></span></p>
+  <p><strong>Base Salary:</strong> ₹<span id="psBase"></span></p>
+  <p><strong>Allowance:</strong> ₹<span id="psAllow"></span></p>
+  <p><strong>Deduction:</strong> ₹<span id="psDeduct"></span></p>
+  <hr>
+  <p><strong>Net Salary:</strong> ₹<span id="psNet"></span></p>
+
+  <button onclick="window.print()">Print Payslip</button>
+</div>
+
+<a href="../dashboard/dash.html">⬅ Back to Dashboard</a>
+
+<script src="payslip.js"></script>
+
+</body>
+
+</html>
+

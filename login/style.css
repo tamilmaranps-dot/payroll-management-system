@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  background:beige;
+  
+}
+
+.container {
+  width: 320px;
+  margin: 120px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 8px;
+  text-align: center;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  width: 95%;
+  padding: 10px;
+  background: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle {
+  margin-top: 15px;
+  color: skyblue;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#message {
+  margin-top: 10px;
+  font-size: 14px;
+}
