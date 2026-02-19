@@ -19,7 +19,7 @@ This project demonstrates employee management, salary calculation, and payslip g
 Frontend / Static Web Application
 
 ## 🔹 Live Demo
-https://tamilmaranps.github.io/payroll/
+ https://tamilmaranps-dot.github.io/payroll-management-system/
 
 
 ## 🔹 How to Run Locally
@@ -28,4 +28,5 @@ https://tamilmaranps.github.io/payroll/
 
 ## 🔹 Note
 This is a frontend-only project built for learning and portfolio purposes.
+
 
