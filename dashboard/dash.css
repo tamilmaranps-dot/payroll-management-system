@@ -81,22 +81,23 @@ header button {
 }
   /* Force remove default link styling */
 .actions a {
-  text-decoration: none !important;
-  color: inherit !important;
+  text-decoration: none ;
+  color: inherit ;
 }
 
 /* Action Card Style */
 .action-card {
-  display: block !important;
-  background: white !important;
-  padding: 20px !important;
-  border-radius: 12px !important;
-  border: 1px solid #ddd !important;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;
-  transition: 0.3s ease !important;
+  display: block ;
+  background: white ;
+  padding: 20px ;
+  border-radius: 12px ;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08) ;
+  transition: 0.3s ease ;
 }
 
 .action-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
+
