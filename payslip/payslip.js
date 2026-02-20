@@ -1,4 +1,4 @@
-// 🔐 Protect page
+//  auth check
 (function checkAuth() {
   const user = JSON.parse(localStorage.getItem("loggedInUser"));
   if (!user) {
@@ -9,7 +9,7 @@
 const select = document.getElementById("payslipSelect");
 const card = document.getElementById("payslipCard");
 
-// 📦 Load payroll safely
+//  Load payroll safely
 let payroll = [];
 try {
   payroll = JSON.parse(localStorage.getItem("payroll")) || [];
@@ -18,7 +18,7 @@ try {
   payroll = [];
 }
 
-// 🚫 Handle empty payroll
+//   empty payroll
 if (payroll.length === 0) {
   select.innerHTML = `<option value="">No payslips available</option>`;
   card.style.display = "none";
@@ -31,7 +31,7 @@ if (payroll.length === 0) {
   });
 }
 
-// 🧾 Payslip selection
+//  Payslip selection
 select.addEventListener("change", () => {
   const idx = select.value;
 
@@ -42,7 +42,7 @@ select.addEventListener("change", () => {
 
   const p = payroll[idx];
 
-  // 🛡️ Validation
+  //  Validation
   if (!p) {
     alert("Payslip record not found");
     card.style.display = "none";
@@ -55,7 +55,7 @@ select.addEventListener("change", () => {
     return;
   }
 
-  // 📄 Populate payslip
+  //  Populate payslip
   document.getElementById("psName").innerText = p.name;
   document.getElementById("psDate").innerText = p.date;
   document.getElementById("psBase").innerText = p.baseSalary;
@@ -65,3 +65,4 @@ select.addEventListener("change", () => {
 
   card.style.display = "block";
 });
+
