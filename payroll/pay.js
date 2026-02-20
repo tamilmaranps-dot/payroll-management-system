@@ -1,4 +1,4 @@
-// 🔐 Protect page (auth check)
+// auth check
 (function checkAuth() {
   const user = JSON.parse(localStorage.getItem("loggedInUser"));
   if (!user) {
@@ -6,7 +6,7 @@
   }
 })();
 
-// 📥 Get employee dropdown
+//  Get employee dropdown
 const employeeSelect = document.getElementById("employeeSelect");
 
 // 📦 Load employees safely
@@ -18,7 +18,7 @@ try {
   employees = [];
 }
 
-// 🧾 Populate employee dropdown
+//  Populate employee dropdown
 if (employeeSelect) {
   employees.forEach(emp => {
     const option = document.createElement("option");
@@ -28,7 +28,7 @@ if (employeeSelect) {
   });
 }
 
-// 📝 Payroll form handling
+//  Payroll form handling
 const payrollForm = document.getElementById("payrollForm");
 
 if (payrollForm) {
@@ -104,3 +104,4 @@ if (payrollForm) {
     payrollForm.reset();
   });
 }
+
