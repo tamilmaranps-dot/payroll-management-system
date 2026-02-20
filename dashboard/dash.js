@@ -1,4 +1,4 @@
-// 🔐 Auth protection (ONLY ONE METHOD)
+//  Auth protection 
 function checkAuth() {
   const user = JSON.parse(localStorage.getItem("loggedInUser"));
   if (!user) {
@@ -7,13 +7,13 @@ function checkAuth() {
 }
 checkAuth();
 
-// 🚪 Logout
+//  Logout
 function logout() {
   localStorage.removeItem("loggedInUser");
   window.location.href = "../login/login.html";
 }
 
-// 👥 Employee count
+//  Employee count
 const employees = JSON.parse(localStorage.getItem("employees")) || [];
 const empCountEl = document.getElementById("empCount");
 
@@ -21,7 +21,7 @@ if (empCountEl) {
   empCountEl.innerText = employees.length;
 }
 
-// 💰 Total payroll calculation
+// Total payroll calculation
 const payroll = JSON.parse(localStorage.getItem("payroll")) || [];
 const totalPayrollEl = document.getElementById("totalPayroll");
 
@@ -33,3 +33,4 @@ payroll.forEach(record => {
 if (totalPayrollEl) {
   totalPayrollEl.innerText = "₹" + totalPayroll;
 }
+
